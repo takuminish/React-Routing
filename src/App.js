@@ -8,4 +8,16 @@ class App extends Component {
     }
 }
 
+class Home extends Component {
+
+}
+
+class Skill extends Component {
+
+}
+
+class Hobby extends Component {
+
+}
+
 export default App;
