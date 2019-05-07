@@ -4,7 +4,9 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 const App = () => (
     <BrowserRouter>
         <div>
-            <Route exapt path="/" component={Home} />
+            <Route exact path="/" component={Home} />
+            <Route path="/hobby" component={Hobby} />
+            <Route path="/skill" component={Skill} />
         </div>
     </BrowserRouter>
 )
