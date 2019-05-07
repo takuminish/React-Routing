@@ -29,6 +29,7 @@ class Skill extends Component {
     render() {
         return(
             <h1>Skill</h1>
+
 	);
     }
 
@@ -37,8 +38,22 @@ class Skill extends Component {
 class Hobby extends Component {
     render() {
         return(
-            <h1>Hobby</h1>
-	);
+            <div>
+                <h1>Hobby</h1>
+                <Route exact path="/hobby" component={HobbyList} />
+                <Route exact path="/hobby/:id" component={Hobby} />
+            </div>
+            );
+    }
+}
+
+class HobbyList extends Component {
+    render() {
+        return(
+            <div>
+
+            </div>
+        );
     }
 }
 
