@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-class App extends Component {
-    
-    render() {
-        return (
-	    <h1>app</h1>
-	);
-    }
-}
+const App = () => (
+    <BrowserRouter>
+        <div>
+            <Route exapt path="/" component={Home} />
+        </div>
+    </BrowserRouter>
+)
 
 class Home extends Component {
     render() {
